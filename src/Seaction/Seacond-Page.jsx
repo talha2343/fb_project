@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React, { useRef } from 'react'
 import images from '../assets/images.jfif'
+import img15 from '../assets/15.jpg'
 
 
 const Seacond_page = () => {
@@ -70,7 +71,9 @@ const Seacond_page = () => {
                     </p>
                 </div>
             </div>
-            <div ref={imgref} className='h-full w-full rounded-tl-full rounded-bl-full overflow-hidden bg-cover border-gray-600 border-2 bg-right bg-[url(./src/assets/15.jpg)]'></div>
+            <div ref={imgref} className='h-full w-full rounded-tl-full rounded-bl-full overflow-hidden bg-cover border-gray-600 border-2 bg-right bg-[url(./src/assets/15.jpg)]'>
+                <img src={img15} className='h-full w-full bg-cover' alt="" />
+            </div>
         </div>
     )
 
