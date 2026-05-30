@@ -7,6 +7,8 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import img7 from "../assets/7.jpg";
+import imgaes from "../assets/image.png";
 
 const Swiper_slide = ({setActiveIndex}) => {
 
@@ -48,11 +50,11 @@ const Swiper_slide = ({setActiveIndex}) => {
     className="w-90 lg:w-100 h-125 rounded-3xl customSwiper"
 >
                 <SwiperSlide className=' flex items-center justify-center text-4xl font-bold text-white rounded-3xl'>
-                    <img src="./src/assets/7.jpg"  className='w-full h-full bg-cover' alt="" />
+                    <img src={img7}  className='w-full h-full bg-cover' alt="" />
                 </SwiperSlide>
 
                 <SwiperSlide className=' flex items-center justify-center text-4xl font-bold text-white rounded-3xl'>
-                    <img src="./src/assets/image.png" className='w-full h-full bg-cover' alt="" />
+                    <img src={imgaes} className='w-full h-full bg-cover' alt="" />
                     
                 </SwiperSlide>
                 <div

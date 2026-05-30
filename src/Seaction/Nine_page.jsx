@@ -1,4 +1,8 @@
 import React from "react";
+import fb from "../assets/45.png";
+import linkedin from "../assets/46.png";
+import insta from "../assets/47.png";
+import whatsapp from "../assets/48.png";
 
 const Nine_page = () => {
   return (
@@ -35,7 +39,6 @@ const Nine_page = () => {
                   www.fbpropertiesdubai.com
                 </p>
               </div>
-
               <div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                   CONTACT
@@ -45,7 +48,6 @@ const Nine_page = () => {
                   <p>+971 4-256-1244</p>
                 </div>
               </div>
-
               <div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">
                   EMAIL US
@@ -54,79 +56,57 @@ const Nine_page = () => {
                   info@fb-realestate.com
                 </p>
               </div>
-
             </div>
           </div>
-
-          {/* right */}
           <div className="flex flex-col gap-8 md:gap-12 justify-center">
-
-            {/* dubai */}
             <div className="rounded-3xl border border-yellow-500/20 bg-white/5 backdrop-blur-xl p-5 sm:p-6 md:p-8">
-
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3">
                 DUBAI — UNITED ARAB EMIRATES
               </h2>
-
               <p className="text-zinc-400 text-sm sm:text-base md:text-lg mb-5 md:mb-6">
                 Head Office — Real Estate Brokerage & Investment Advisory
               </p>
-
               <div className="space-y-3 md:space-y-4 text-base sm:text-lg md:text-xl">
-
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                   <span className="font-bold">CONTACT</span>
                   <span className="text-zinc-300">+971 55-157-5772</span>
                 </div>
-
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
                   <span className="font-bold">ADDRESS</span>
                   <span className="text-zinc-300">
                     DAMAC Business Tower 504, Business Bay, Dubai
                   </span>
                 </div>
-
               </div>
             </div>
-
-            {/* ramallah */}
             <div className="rounded-3xl border border-yellow-500/20 bg-white/5 backdrop-blur-xl p-5 sm:p-6 md:p-8">
-
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3">
                 RAMALLAH — PALESTINE
               </h2>
-
               <p className="text-zinc-400 text-sm sm:text-base md:text-lg mb-5 md:mb-6">
                 Regional Office — Client Relations & International Business Development
               </p>
-
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-base sm:text-lg md:text-xl">
                 <span className="font-bold">CONTACT</span>
                 <span className="text-zinc-300">+972 59-554-8194</span>
               </div>
-
             </div>
-
             <div className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
               CONTACT US TODAY TO EXPLORE
               <br />
               <span>EXCLUSIVE INVESTMENT OPPORTUNITIES</span>
             </div>
-
           </div>
         </div>
-
-        {/* social */}
         <div className="mt-12 md:mt-16 flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-10">
 
           {[
-            { img: "./src/assets/45.png", label: "FACEBOOK", link: "https://www.facebook.com/foreignbrothersrealestate" },
-            { img: "./src/assets/46.png", label: "LINKEDIN", link: "https://www.linkedin.com/company/foreign-brothers-real-estate-brokers?originalSubdomain=ae" },
-            { img: "./src/assets/47.png", label: "INSTAGRAM", link: "https://www.instagram.com/foreignbrothersre/" },
-            { img: "./src/assets/48.png", label: "WHATSAPP", link: "https://wa.me/971551575772?src=qr" },
+            { img: fb, label: "FACEBOOK", link: "https://www.facebook.com/foreignbrothersrealestate" },
+            { img: linkedin, label: "LINKEDIN", link: "https://www.linkedin.com/company/foreign-brothers-real-estate-brokers?originalSubdomain=ae" },
+            { img: insta, label: "INSTAGRAM", link: "https://www.instagram.com/foreignbrothersre/" },
+            { img: whatsapp, label: "WHATSAPP", link: "https://wa.me/971551575772?src=qr" },
           ].map((item, i) => (
             <div key={i} className="flex flex-col items-center gap-2 sm:gap-3 group cursor-pointer">
-
               <a
                 href={item.link}
                 className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-2xl md:rounded-3xl border overflow-hidden border-yellow-500/30 bg-white/5 backdrop-blur-xl flex items-center justify-center transition-all duration-500 group-hover:scale-110"

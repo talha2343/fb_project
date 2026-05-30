@@ -1,6 +1,11 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import React, { useRef } from 'react'
+import icon1 from "../assets/icon1.png";
+import icon2 from "../assets/icon2.png";
+import icon3 from "../assets/icon3.png";
+import img54 from "../assets/54.png";
+import img2 from "../assets/2.png";
 
 const Four_page = () => {
 
@@ -33,7 +38,7 @@ const Four_page = () => {
 
   const data = [
     {
-      img: "./src/assets/icon1.png",
+      img: icon1,
       heding: "VISION",
       dis: `To become a trusted real
               estate advisory firm
@@ -42,7 +47,7 @@ const Four_page = () => {
               and international markets.`
     },
     {
-      img: "./src/assets/icon2.png",
+      img: icon2,
       heding: "MISSION",
       dis: `To deliver strategic, transparent,
             and results-driven real estate
@@ -50,7 +55,7 @@ const Four_page = () => {
             and long-term partnerships.`
     },
     {
-      img: "./src/assets/icon3.png",
+      img: icon3,
       heding: "VALUES",
       dis: `We prioritize integrity, transparency,
             and dedication, believing that these
@@ -67,13 +72,13 @@ const Four_page = () => {
   className="min-h-screen w-full relative overflow-hidden flex items-center justify-center text-white"
 >
   <img
-    src="./src/assets/54.png"
+    src={img54}
     className="object-cover bg-cover h-full w-full absolute -z-10 top-0 left-0 brightness-20"
     alt=""
   />
 
   <img
-    src="./src/assets/2.png"
+    src={img2}
     className="absolute -top-100 opacity-40 left-0 brightness-20"
     alt=""
   />

@@ -3,64 +3,74 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React from 'react'
 import { useRef } from 'react';
+import img11 from "../assets/11.png";
+import img12 from "../assets/12.png";
+import img13 from "../assets/13.png";
+import img14 from "../assets/14.png";
+import img16 from "../assets/16.png";
+import img17 from "../assets/17.png";
+import img18 from "../assets/18.png";
+import img19 from "../assets/19.png";
+import img20 from "../assets/20.png";
+import img21 from "../assets/21.png";
 
 const Six_page = () => {
 
   const container = useRef(null)
   const Boxref = useRef(null)
 
-  const servicesData = [
-    {
-      img: "./src/assets/11.png",
-      heading: "RESIDENTIAL SALES AND LEASING",
-      text: "Discover your dream home with us.",
-    },
-    {
-      img: "./src/assets/12.png",
-      heading: "LAND ACQUISITION & COMMERCIAL SALES",
-      text: "Strategic land and commercial investment opportunities.",
-    },
-    {
-      img: "./src/assets/13.png",
-      heading: "COMMERCIAL SALES AND LEASING",
-      text: "Find the perfect space for your business.",
-    },
-    {
-      img: "./src/assets/14.png",
-      heading: "INVESTMENT ADVISORY",
-      text: "Expert guidance for smart investments.",
-    },
-    {
-      img: "./src/assets/16.png",
-      heading: "RELOCATION ASSISTANCE",
-      text: "Helping you settle into your new home.",
-    },
-    {
-      img: "./src/assets/17.png",
-      heading: "LEGAL GUIDANCE",
-      text: "Expert advice for your property transactions.",
-    },
-    {
-      img: "./src/assets/18.png",
-      heading: "INTERIOR DESIGN",
-      text: "Transforming spaces into your dream home.",
-    },
-    {
-      img: "./src/assets/19.png",
-      heading: "PROPERTY MANAGEMENT",
-      text: "We ensure your investments are well taken care of.",
-    },
-    {
-      img: "./src/assets/20.png",
-      heading: "MARKET ANALYSIS",
-      text: "Insights to guide your investment decisions.",
-    },
-    {
-      img: "./src/assets/21.png",
-      heading: "MORTGAGE ASSISTANCE",
-      text: "Navigating financing for your property.",
-    },
-  ];
+const servicesData = [
+  {
+    img: img11,
+    heading: "RESIDENTIAL SALES AND LEASING",
+    text: "Discover your dream home with us.",
+  },
+  {
+    img: img12,
+    heading: "LAND ACQUISITION & COMMERCIAL SALES",
+    text: "Strategic land and commercial investment opportunities.",
+  },
+  {
+    img: img13,
+    heading: "COMMERCIAL SALES AND LEASING",
+    text: "Find the perfect space for your business.",
+  },
+  {
+    img: img14,
+    heading: "INVESTMENT ADVISORY",
+    text: "Expert guidance for smart investments.",
+  },
+  {
+    img: img16,
+    heading: "RELOCATION ASSISTANCE",
+    text: "Helping you settle into your new home.",
+  },
+  {
+    img: img17,
+    heading: "LEGAL GUIDANCE",
+    text: "Expert advice for your property transactions.",
+  },
+  {
+    img: img18,
+    heading: "INTERIOR DESIGN",
+    text: "Transforming spaces into your dream home.",
+  },
+  {
+    img: img19,
+    heading: "PROPERTY MANAGEMENT",
+    text: "We ensure your investments are well taken care of.",
+  },
+  {
+    img: img20,
+    heading: "MARKET ANALYSIS",
+    text: "Insights to guide your investment decisions.",
+  },
+  {
+    img: img21,
+    heading: "MORTGAGE ASSISTANCE",
+    text: "Navigating financing for your property.",
+  },
+];
 
  useGSAP(() => {
   const mm = gsap.matchMedia();

@@ -2,6 +2,8 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React, { useRef } from 'react'
+import images from '../assets/images.jfif'
+
 
 const Seacond_page = () => {
 
@@ -51,7 +53,7 @@ const Seacond_page = () => {
 
     return (
         <div ref={Boxref} className='h-screen w-full relative overflow-hidden flex items-center justify-evenly 2xl:flex-row flex-col '>
-            <img src="./src/assets/images.jfif" className='absolute top-0 left-0 h-full w-full -z-10 object-cover' alt="" />
+            <img src={images} className='absolute top-0 left-0 h-full w-full -z-10 object-cover' alt="" />
             <div className='h-full w-full flex items-center 2xl:justify-center justify-start 2xl:p-0 px-5'>
                 <div className='flex flex-col text-black w-full md:w-[85%] 2xl:w-2/3 py-6 md:py-10 2xl:py-0 '>
                     <h2 ref={Herotext} className='font-[text] tracking-tighter leading-tight text-4xl md:text-5xl 2xl:text-7xl whitespace-normal'>

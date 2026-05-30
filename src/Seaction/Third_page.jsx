@@ -5,6 +5,7 @@ import Swiper_slide from './Swiper_slide'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import images from '../assets/images.jfif'
 
 const Third_page = () => {
 
@@ -75,7 +76,7 @@ Born and raised in the UAE, with a background in Finance and Management and stro
 
             {/* Background */}
             <img
-                src="./src/assets/images.jfif"
+                src={images}
                 className='absolute inset-0 h-full w-full object-cover -z-10'
                 alt=""
             />

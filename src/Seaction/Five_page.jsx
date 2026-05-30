@@ -102,32 +102,16 @@ const Five_page = () => {
 
       {/* Cards */}
       <div
-        className="
-          grid
-          grid-cols-1
-          sm:grid-cols-2
-          xl:grid-cols-3
-          gap-6
-          2xl:gap-10
-          place-items-center
-          relative
-          z-10
-        "
-      >
+        className=" grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 2xl:gap-10 place-items-center relative z-10">
         {data.map((elem, idx) => {
           return (
             <div
               key={idx}
-              className=" cards relative w-full max-w-95 min-h-80 md:min-h-87.5 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] text-center text-white flex items-center justify-center flex-col gap-5 p-6 md:p-8 overflow-hidden hover:scale-105 hover:border-yellow-500/40 transition-all duration-500 shadow-[0_8px_40px_rgba(0,0,0,0.5)]
-              "
-            >
-              {/* Gradient Glow */}
+              className=" cards relative w-full max-w-95 min-h-80 md:min-h-87.5 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] text-center text-white flex items-center justify-center flex-col gap-5 p-6 md:p-8 overflow-hidden hover:scale-105 hover:border-yellow-500/40 transition-all duration-500 shadow-[0_8px_40px_rgba(0,0,0,0.5)]">
               <div className="absolute inset-0 bg-linear-to-br from-yellow-500/10 to-transparent opacity-50" />
-
               <h4 className="font-black text-3xl md:text-4xl tracking-tight z-10">
                 {elem.heading}
               </h4>
-
               <p className="text-base md:text-lg leading-7 md:leading-8 text-gray-300 z-10">
                 {elem.text}
               </p>
