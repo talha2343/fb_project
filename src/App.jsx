@@ -10,6 +10,7 @@ import Six_page from "./Seaction/Six_page";
 import Seven_page from "./Seaction/Seven_page";
 import Eight_page from "./Seaction/Eight_page";
 import Nine_page from "./Seaction/Nine_page";
+import Loader from "./Seaction/Loder";
 
 
 const App = () => {
