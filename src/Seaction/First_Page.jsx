@@ -6,6 +6,7 @@ import img0 from '../assets/0.jpg'
 import imgmd0 from '../assets/md0.jpg'
 import img2 from '../assets/2.png'
 import img4 from '../assets/4.png'
+import logo from '../assets/log.png'
 
 const First_Page = () => {
     const Logoref = useRef(null)
@@ -46,7 +47,7 @@ const First_Page = () => {
             <div ref={Devref} className=' h-full w-full bg-linear-to-r from-black via-black to-transparent flex items-center justify-center 2xl:justify-start px-4 sm:px-8 md:px-12 2xl:px-40 opacity-90'>
                 <div className='flex flex-col text-white text-center 2xl:text-left gap-6 md:gap-8 2xl:gap-10'>
                     <div className='flex items-center justify-center 2xl:justify-start flex-col overflow-hidden h-28 md:h-36 2xl:h-55'>
-                        <img ref={Logoref} src="./src/assets/log.png" className='w-auto h-20 sm:h-24 md:h-32 2xl:h-55' alt=""/>
+                        <img ref={Logoref} src={logo} className='w-auto h-20 sm:h-24 md:h-32 2xl:h-55' alt=""/>
                     </div>
                     <div ref={Textref} className='mt-2 md:mt-6 2xl:mt-10'>
                         <h2 className='font-sans font-extralight uppercase leading-tight text-center text-sm sm:text-base md:text-lg 2xl:text-2xl'>
