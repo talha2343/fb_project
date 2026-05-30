@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
-import First_Page from "./seaction1/First_Page";
-import Seacond_page from "./seaction1/Seacond-Page";
-import Third_page from "./seaction1/third_page";
-import Four_page from "./seaction1/Four_page";
-import Five_page from "./seaction1/Five_page";
-import Six_page from "./seaction1/Six_page";
-import Loader from "./seaction1/Loder";
-import Seven_page from "./seaction1/Seven_page";
-import Eight_page from "./seaction1/Eight_page";
-import Nine_page from "./seaction1/Nine_page";
+import First_Page from "./Seaction/First_Page";
+import Seacond_page from "./Seaction/Seacond-Page";
+import Third_page from "./Seaction/Third_page";
+import Four_page from "./Seaction/Four_page";
+import Five_page from "./Seaction/Five_page";
+import Six_page from "./Seaction/Six_page";
+import Seven_page from "./Seaction/Seven_page";
+import Eight_page from "./Seaction/Eight_page";
+import Nine_page from "./Seaction/Nine_page";
+
 
 const App = () => {
   const scrollRef = useRef(null);
