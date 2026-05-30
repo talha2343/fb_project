@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: text;
+    src: url(../public/Gazpacho-Light.otf);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.customSwiper .swiper-pagination-bullet {
+  background: yellow;
+}
+
+.customSwiper .swiper-pagination-bullet-active {
+  background: white;
+}
+
+/* left animation */
+.animate{
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+/* right animation */
+.animate2{
+  width: max-content;
+  animation: marquee2 45s linear infinite;
+}
+
+@keyframes marquee{
+  from{
+    transform: translateX(0%);
+  }
+
+  to{
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee2{
+  from{
+    transform: translateX(-50%);
+  }
+
+  to{
+    transform: translateX(0%);
+  }
+}
+body{
+  background: #000;
+}
